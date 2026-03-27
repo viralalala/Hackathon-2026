@@ -1,0 +1,7 @@
+{
+  "name": "Cognito",
+  "description": "AI Mental Health Companion",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
