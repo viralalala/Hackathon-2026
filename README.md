@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Cognito - AI Mental Health Companion
 
-# Run and deploy your AI Studio app
+**Created by: printf scanf**
 
-This contains everything you need to run your app locally.
+## Overview
+Cognito is a premium, voice-first mental wellness companion designed to provide a calm, emotionally intelligent, and non-judgmental presence. Built using the cutting-edge Gemini Live API, Cognito allows users to have real-time, fluid voice conversations. The AI listens actively, validates feelings, and responds with a warm, grounded, and organic tone to make users feel heard, understood, and safe.
 
-View your app in AI Studio: https://ai.studio/apps/28dfb629-a8b9-4d3a-a514-3a1864d7ec30
+## Features
+- **Real-Time Voice Interaction:** Have natural, low-latency voice conversations with the AI companion.
+- **Live Transcription:** See real-time text transcriptions of both your speech and the AI's responses.
+- **Emotionally Intelligent AI:** Powered by Gemini 3.1 Flash Live Preview, customized with system instructions to act as a supportive mental health guide.
+- **Calm & Minimal UI:** A soothing, distraction-free interface designed specifically for mental wellness and focus.
+- **Audio Streaming:** Uses WebSockets and the Web Audio API for seamless PCM audio streaming and playback.
 
-## Run Locally
+## Tech Stack
+- **Frontend Framework:** React 19, Vite
+- **Styling:** Tailwind CSS
+- **AI Integration:** `@google/genai` (Gemini 3.1 Flash Live Preview API)
+- **Audio Processing:** Web Audio API (16kHz PCM recording, 24kHz playback)
+- **Animations:** Framer Motion (`motion/react`)
+- **Icons:** Lucide React
 
-**Prerequisites:**  Node.js
+## Setup & Installation
 
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the app:**
+   Navigate to `http://localhost:3000/chat.html` in your browser to start a session.
+
+## Credits
+**All design, development, and implementation credits go exclusively to:**
+- **printf scanf**
+
+*(No other individuals or entities are credited for this project).*
